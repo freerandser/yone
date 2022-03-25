@@ -1,4 +1,5 @@
 import discord
+import os
 from discord.ext import commands
 
 import lol
@@ -25,5 +26,5 @@ async def random_lol(ctx, *, text=''):
             message += key + ' : ' + value + '\n'
     await ctx.send(message)
 
-
-bot.run('OTU2MzUzNDQzODIyNDQ4Njcx.Yju_jQ.oFeW13YSzSTEkfpT386iaCriphc')
+@access_token = os.environ["BOT_TOKEN"]
+bot.run('access_token')
